@@ -1,4 +1,4 @@
-# Debug Commands
+# Kubernetes Debug Commands
 
 The `kubectl` command-line interface (CLI) allows containers to be debugged by accessing a cluster's [control plane](https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane) through the Kubernetes API.
 The control plane returns information about container lifecycles, which is then used for troubleshooting the cluster.
@@ -7,7 +7,7 @@ Debugging combines several operations to retrieve information and test from the 
 The official Kubernetes [debugging guide](https://kubernetes.io/docs/tasks/debug/) offers a deeper dive into troubleshooting beyond this document's scope.
 
 
-## Retrieve Information
+## Retrieve Pods and Logs
 
 Run `kubectl get pods` to return a list of all pods in the current namespace.
 Provide a `--namespace` to retrieve information about pods in a given namespace, or use `--all-namespaces` to list all pods in all namespaces.
